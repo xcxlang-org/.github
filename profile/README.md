@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../assets/img/icon.png" width="128" height="128" alt="XCX Logo">
+  <img src="../assets/img/banner.png" width="800" alt="XCX Banner">
 </p>
 
 # xcx-lang
