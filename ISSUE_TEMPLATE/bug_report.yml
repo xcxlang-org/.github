@@ -1,0 +1,46 @@
+name: Bug report
+description: Something crashes, produces wrong output, or behaves unexpectedly
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: XCX version
+      placeholder: "e.g. 3.0.0 (xcx --version)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproducer
+    attributes:
+      label: Minimal reproducer
+      description: Smallest .xcx file that triggers the issue
+      render: xcx
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happens - include full error output or stack trace
+    validations:
+      required: true
+
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      value: |
+        - OS: Windows 11 / 10
+        - CPU:
+    validations:
+      required: false

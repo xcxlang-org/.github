@@ -1,0 +1,27 @@
+name: Documentation
+description: Error, gap, or outdated info in the docs or README
+labels: [documentation]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Where?
+      placeholder: Link or path to the affected page / file
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong?
+      description: Describe the mistake or missing information
+    validations:
+      required: true
+
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested fix
+      description: Optional - how it should read
+    validations:
+      required: false

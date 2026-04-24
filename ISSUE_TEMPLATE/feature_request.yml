@@ -1,0 +1,40 @@
+name: Feature request
+description: New language feature, stdlib addition, or JIT/VM improvement
+labels: [enhancement]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What do you want?
+      description: Clear description of the feature
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why?
+      description: What problem does it solve? What's currently not possible or painful?
+    validations:
+      required: true
+
+  - type: textarea
+    id: syntax
+    attributes:
+      label: Rough idea of syntax / API
+      description: Optional - how it might look in XCX
+      render: xcx
+    validations:
+      required: false
+
+  - type: dropdown
+    id: target
+    attributes:
+      label: Target version
+      description: 3.x is stabilization only - architectural changes belong in 4.0
+      options:
+        - 3.x (bugfix / stabilization)
+        - 4.0 (architectural / new feature)
+        - Not sure
+    validations:
+      required: true

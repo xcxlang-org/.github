@@ -1,0 +1,41 @@
+name: Performance
+description: Regression, unexpected slowdown, or benchmark discrepancy
+labels: [performance]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: XCX version
+      placeholder: "e.g. 3.0.0 (xcx --version)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproducer
+    attributes:
+      label: Benchmark / reproducer
+      description: Code that exhibits the slowdown
+      render: xcx
+    validations:
+      required: true
+
+  - type: textarea
+    id: numbers
+    attributes:
+      label: Numbers
+      value: |
+        | | Expected | Actual |
+        |--|--|--|
+        | Runtime | | |
+
+        How measured: (time, xcx built-in, external harness)
+    validations:
+      required: true
+
+  - type: textarea
+    id: cause
+    attributes:
+      label: Suspected cause
+      description: Optional - JIT not triggering, interpreter fallback, specific opcode, etc.
+    validations:
+      required: false
