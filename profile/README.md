@@ -13,7 +13,7 @@ XCX is a statically typed, multi-paradigm backend language built in Rust. HTTP, 
 | [xcx-compiler](https://github.com/xcx-lang/xcx-compiler) | Compiler, bytecode VM, tracing JIT (Cranelift), and CLI |
 | [pax](https://github.com/xcx-lang/pax) | PAX package manager |
 | [xcx-site](https://github.com/xcx-lang/xcx-site) | Official website source |
-| [xcx-stdlib / mathlib](https://github.com/xcx-lang/xcx-stdlib) | Standard library and math extensions |
+| [xcx-stdlib / mathlib](https://github.com/xcx-lang/math-lib) | Standard library and math extensions |
 
 
 ## Quick start
