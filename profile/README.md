@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../assets/img/banner.png" width="800" alt="XCX Banner">
+  <img src="assets/images/banner.png" width="800" alt="XCX Banner">
 </p>
 
 # xcx-lang
@@ -10,15 +10,15 @@ XCX is a statically typed, multi-paradigm backend language built in Rust. HTTP, 
 
 | Repo | Description |
 |------|-------------|
-| [xcx-compiler](https://github.com/xcxlang-org/xcx) | Compiler, bytecode VM, tracing JIT (Cranelift), and CLI |
+| [xcx](https://github.com/xcxlang-org/xcx) | Compiler, bytecode VM, tracing JIT (Cranelift), and CLI |
 | [pax](https://github.com/xcxlang-org/pax) | PAX package manager |
-| [vscode-extension]([https://github.com/xcxlang-org/xcx-site](https://github.com/xcxlang-org/xcx-vscode)) | vscode-extension |
+| [xcx-vscode](https://github.com/xcxlang-org/xcx-vscode) | vscode-extension |
 | [mathlib](https://github.com/xcxlang-org/math-lib) | Standard library and math extensions |
 
 
 ## Quick start
 
-**1. Install** - download `xcx-setup.exe` from [xcxlang.com](https://xcxlang.com) or from the [Releases tab](https://github.com/xcx-lang/xcx-compiler/releases), run the installer, and follow the on-screen instructions. `xcx` will be added to your PATH automatically.
+**1. Install** - download `xcx-setup.exe` from [xcxlang.com](https://xcxlang.com) or from the [Releases tab](https://github.com/xcxlang-org/xcx/releases), run the installer, and follow the on-screen instructions. `xcx` will be added to your PATH automatically.
 
 **2. Hello World** - create a file and run it:
 
@@ -30,7 +30,7 @@ XCX is a statically typed, multi-paradigm backend language built in Rust. HTTP, 
 xcx hello.xcx
 ```
 
-**VS Code extension** - syntax highlighting and snippets available at [xcx-lang/xcx-vscode](https://github.com/xcx-lang/xcx-vscode).
+**VS Code extension** - syntax highlighting and snippets available at [xcxlang-org/xcx-vscode](https://github.com/xcxlang-org/xcx-vscode).
 
 
 ## Ecosystem
@@ -38,7 +38,7 @@ xcx hello.xcx
 | Resource | Link |
 |----------|-------|
 | Official site | [xcxlang.com](https://xcxlang.com) |
-| Documentation | [xcxlang.com/docs/index.html](https://xcxlang.com/docs/index.html) · [/documentation in repo](https://github.com/xcx-lang/xcx-compiler/tree/main/documentation) |
+| Documentation | [xcxlang.com/docs/index.html](https://xcxlang.com/docs/index.html) · [/docs in repo](https://github.com/xcxlang-org/xcx/tree/main/docs) |
 | PAX Registry | [pax.xcxlang.com](https://pax.xcxlang.com) |
 
 
