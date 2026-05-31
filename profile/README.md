@@ -46,7 +46,7 @@ xcx hello.xcx
 
 | Version | Status | Notes |
 |---------|--------|-------|
-| **XCX 3.0** | ✅ Current | *The Database & Ecosystem Update* - native SQL, PAX Registry Preview, strict type system |
+| **XCX 3.1** | ✅ Current | *The Database & Ecosystem Update* - native SQL, PAX Registry Preview, strict type system |
 | **XCX 4.0** | 🔧 Planned | Full architectural rewrite - decoupled from Windows API, further JIT/VM optimizations, possible Linux support |
 
 XCX is developed by a single contributor. The language is usable for small backend services and tools; production use in large systems is not recommended at this stage.
