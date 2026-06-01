@@ -12,9 +12,9 @@ XCX is a statically typed, multi-paradigm backend language built in Rust. HTTP, 
 |------|-------------|
 | [xcx](https://github.com/xcxlang-org/xcx) | Compiler, bytecode VM, tracing JIT (Cranelift), and CLI |
 | [pax](https://github.com/xcxlang-org/pax) | PAX package manager |
+| [xcx-web-playground](https://github.com/xcxlang-org/xcx-web-playground) | Browser-based playground — no installation required |
 | [xcx-vscode](https://github.com/xcxlang-org/xcx-vscode) | vscode-extension |
 | [mathlib](https://github.com/xcxlang-org/math-lib) | Standard math library extensions |
-
 
 ## Quick start
 
@@ -32,7 +32,6 @@ xcx hello.xcx
 
 **VS Code extension** - syntax highlighting and snippets available at [xcxlang-org/xcx-vscode](https://github.com/xcxlang-org/xcx-vscode).
 
-
 ## Ecosystem
 
 | Resource | Link |
@@ -40,7 +39,7 @@ xcx hello.xcx
 | Official site | [xcxlang.com](https://xcxlang.com) |
 | Documentation | [xcxlang.com/docs/index.html](https://xcxlang.com/docs/index.html) · [/docs in repo](https://github.com/xcxlang-org/xcx/tree/main/docs) |
 | PAX Registry | [pax.xcxlang.com](https://pax.xcxlang.com) |
-
+| Playground | [playground.xcxlang.com](https://playground.xcxlang.com) |
 
 ## Status
 
