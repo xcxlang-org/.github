@@ -10,7 +10,7 @@ XCX is a statically typed, multi-paradigm backend language built in Rust. HTTP, 
 
 | Repo | Description |
 |------|-------------|
-| [xcx](https://github.com/xcxlang-org/xcx) | Compiler, bytecode VM, tracing JIT (Cranelift), and CLI |
+| [xcx](https://github.com/xcxlang-org/xcx) | Compiler, bytecode VM, tracing JIT, and CLI |
 | [pax](https://github.com/xcxlang-org/pax) | PAX package manager |
 | [xcx-web-playground](https://github.com/xcxlang-org/xcx-web-playground) | Browser-based playground — no installation required |
 | [xcx-vscode](https://github.com/xcxlang-org/xcx-vscode) | vscode-extension |
@@ -18,9 +18,15 @@ XCX is a statically typed, multi-paradigm backend language built in Rust. HTTP, 
 
 ## Quick start
 
-**1. Install** - download `xcx-setup.exe` from [xcxlang.com](https://xcxlang.com) or from the [Releases tab](https://github.com/xcxlang-org/xcx/releases), run the installer, and follow the on-screen instructions. `xcx` will be added to your PATH automatically.
+**1. Install**
 
-**2. Hello World** - create a file and run it:
+- Windows: download `xcx-setup.exe` from [xcxlang.com](https://xcxlang.com) or the [Releases tab](https://github.com/xcxlang-org/xcx/releases)
+- Linux: `curl -sL https://xcxlang.com/install.sh | bash`, or grab the tarball from Releases
+- FreeBSD (experimental, no guarantees): [xcx-experimental-builds](https://github.com/xcxlang-org/xcx-experimental-builds)
+
+`xcx` will be added to your PATH automatically.
+
+**2. Hello World**
 
 ```xcx
 >! "Hello, World!";
@@ -45,7 +51,10 @@ xcx hello.xcx
 
 | Version | Status | Notes |
 |---------|--------|-------|
-| **XCX 3.1** | ✅ Current | *The Database & Ecosystem Update* - native SQL, PAX Registry Preview, strict type system |
-| **XCX 4.0** | 🔧 Planned | Full architectural rewrite - decoupled from Windows API, further JIT/VM optimizations, possible Linux support |
+| **XCX 4.0** | ✅ Released | Full architectural rewrite of the VM and JIT, zero-copy JSON, arena allocator, reworked REPL |
+| **XCX 4.1** | ✅ Released | Reduced cross-function call overhead, inlined collection size reads, pointer analysis optimizations, `array.slice()`, `json.keys()` |
+| **XCX 4.2** | 🔧 In development | Compiler pipeline improvements and further performance work |
+
+XCX runs on Windows, Linux (Ubuntu, Arch/Manjaro, and generally all major distros), and has an experimental FreeBSD build.
 
 XCX is developed by a single contributor. The language is usable for small backend services and tools; production use in large systems is not recommended at this stage.
