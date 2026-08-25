@@ -1,9 +1,3 @@
-<p align="center">
-  <img src="https://github.com/xcxlang-org/xcx-branding/blob/main/banner/svg/banner.svg" width="800" alt="XCX Banner">
-</p>
-
-# xcx-lang
-
 XCX is a statically typed, multi-paradigm backend language built in Rust. HTTP, SQLite, JSON, crypto, and file I/O are part of the language itself - no frameworks, no ORMs, no boilerplate. Write logic; the runtime handles the rest.
 
 ## Core repositories
