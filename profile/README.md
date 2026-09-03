@@ -46,6 +46,8 @@ xcx hello.xcx
 | **XCX 4.0** | ✅ Released | Full architectural rewrite of the VM and JIT, zero-copy JSON, arena allocator, reworked REPL |
 | **XCX 4.1** | ✅ Released | Reduced cross-function call overhead, inlined collection size reads, pointer analysis optimizations, `array.slice()`, `json.keys()` |
 | **XCX 4.2** | ✅ Released | "The HIR & Fast Path Update" - new HIR compilation layer, function inlining, JIT fast paths, BoolArray optimization, cached JSON parsing, in-place string append, Hash-Join for `table.join`, HTTP connection pooling |
+| **XCX 4.3** | ✅ Released | "The Method JIT & Hardening Update" - per-function method JIT as the only JIT engine (trace and fiber JIT removed), JIT multi-return and register-tracking correctness fixes, unified SSRF hardening, sieve -62.7% via receiver refcount elision, unlimited JSON nesting depth |
+| **XCX 4.4** | 🚧 In development | `--no-jit` interpreter-mode performance (main focus - regressed since 4.0), further recursion-time improvements, technical-debt cleanup |
 
 XCX runs on Windows, Linux (Ubuntu, Arch/Manjaro, and generally all major distros), and has an experimental FreeBSD build (JIT support still an open issue there).
 
