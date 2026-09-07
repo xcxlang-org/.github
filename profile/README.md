@@ -11,25 +11,6 @@ XCX is a statically typed, multi-paradigm backend language built in Rust. HTTP, 
 | [mathlib](https://github.com/xcxlang-org/math-lib) | Standard math library extensions |
 | [xcx-benchmarks](https://github.com/xcxlang-org/xcx-benchmarks) | Benchmark suite and methodology |
 
-## Quick start
-
-**1. Install**
-- Windows: download `xcx-setup.exe` from [xcxlang.com](https://xcxlang.com) or the [Releases tab](https://github.com/xcxlang-org/xcx/releases)
-- Linux: `curl -sL https://xcxlang.com/install.sh | bash`, or grab the tarball from Releases
-- FreeBSD (experimental, no guarantees): [xcx-experimental-builds](https://github.com/xcxlang-org/xcx-experimental-builds)
-
-`xcx` will be added to your PATH automatically.
-
-**2. Hello World**
-```xcx
->! "Hello, World!";
-```
-```bash
-xcx hello.xcx
-```
-
-**VS Code extension** - syntax highlighting and snippets available at [xcxlang-org/xcx-vscode](https://github.com/xcxlang-org/xcx-vscode), published on both the VS Code Marketplace and Open VSX Registry.
-
 ## Ecosystem
 
 | Resource | Link |
@@ -39,16 +20,6 @@ xcx hello.xcx
 | PAX Registry | [pax.xcxlang.com](https://pax.xcxlang.com) |
 | Playground | [playground.xcxlang.com](https://playground.xcxlang.com) |
 
-## Status
+XCX runs on Windows, macOS, and Linux (Ubuntu, Arch/Manjaro, and generally all major distros), with an experimental FreeBSD build.
 
-| Version | Status | Notes |
-|---------|--------|-------|
-| **XCX 4.0** | ✅ Released | Full architectural rewrite of the VM and JIT, zero-copy JSON, arena allocator, reworked REPL |
-| **XCX 4.1** | ✅ Released | Reduced cross-function call overhead, inlined collection size reads, pointer analysis optimizations, `array.slice()`, `json.keys()` |
-| **XCX 4.2** | ✅ Released | "The HIR & Fast Path Update" - new HIR compilation layer, function inlining, JIT fast paths, BoolArray optimization, cached JSON parsing, in-place string append, Hash-Join for `table.join`, HTTP connection pooling |
-| **XCX 4.3** | ✅ Released | "The Method JIT & Hardening Update" - per-function method JIT as the only JIT engine (trace and fiber JIT removed), JIT multi-return and register-tracking correctness fixes, unified SSRF hardening, sieve -62.7% via receiver refcount elision, unlimited JSON nesting depth |
-| **XCX 4.4** | 🚧 In development | `--no-jit` interpreter-mode performance (main focus - regressed since 4.0), further recursion-time improvements, technical-debt cleanup |
-
-XCX runs on Windows, Linux (Ubuntu, Arch/Manjaro, and generally all major distros), and has an experimental FreeBSD build (JIT support still an open issue there).
-
-XCX is developed by a single contributor. The language is usable for small backend services and tools; production use in large systems is not recommended at this stage.
+XCX is developed by a single contributor and is currently in a runtime stabilization phase. Not recommended for production use yet, but experimentation, small backend services, and tools are very much encouraged.
